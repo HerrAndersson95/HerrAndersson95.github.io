@@ -1,21 +1,25 @@
-<html>
-<head>
-<title> Amazing site </title>
-</head>
-<body>
-You have arrived to nothing. <br />
-There is nothing to do here, please leave. <br />
-
-<a href="https://github.com/HerrAndersson95"><button>This is some radical things!</button></a>
-
-<br />
-<br />
-
-<img src="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/10377254_759721507405387_3327391345425161631_n.jpg?oh=f05b539838760cd42beedb61c8f3f21e&oe=57D11CDD" 
-alt="W3Schools.com">
-<br />
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bR-s4ReIxJo" frameborder="0" allowfullscreen></iframe>
-
-
-</body>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | HarmfulEnergy</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">HarmfulEnergy</div>
+      </div>
+    </div>
+  </body>
 </html>
